@@ -1,0 +1,1 @@
+ docker-compose -f recipeapp.yml run app sh -c "django-admin.py startproject app ."
