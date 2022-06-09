@@ -1,10 +1,17 @@
 language: python
 python:
   - "3.7"
-services:
-  - docker
+  - "nightly"
+install: 
+  - "pip install pytest"
+  - "pip install -r requirements.txt"
+script: python -m pytest tests/
 
-before_scripts: pip install docker-compose
+# updated on basis of testing front on 9 june 2022
+# services:
+#   - docker
 
-script:
-  - docker-compose -f recipeapp.yml run app sh -c "python manage.py test && flake8"
+# before_scripts: pip install docker-compose
+
+# script:
+#   - docker-compose -f recipeapp.yml run app sh -c "python manage.py test && flake8"
