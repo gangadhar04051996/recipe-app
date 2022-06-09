@@ -11,7 +11,12 @@ script: python -m pytest tests/
 # services:
 #   - docker
 
+<<<<<<< HEAD
 # before_scripts: pip install docker-compose
 
 # script:
 #   - docker-compose -f recipeapp.yml run app sh -c "python manage.py test && flake8"
+# =======
+# script:
+#   - docker-compose -f recipeapp.yml run app sh -c "python manage.py test && flake8"
+# >>>>>>> 06b998e83c9321aff159a5ea1905dbabb6d8df7e
